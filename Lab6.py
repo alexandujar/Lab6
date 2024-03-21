@@ -9,8 +9,15 @@ def encode(password):
 
 
 def decode(encoded):
-    # decoded code goes here
-    pass
+    #KM added in decode function
+    decoded = ''
+    for digit in encoded:
+        num = int(digit)
+        num -= 3
+        if num < 0:
+            num += 10
+        decoded += str(num)
+
 
 
 
