@@ -3,8 +3,7 @@
 def encode(password):
     encoded = ''
     for digit in password:
-        encoded_dig = str((int(digit) + 3) % 10)
-        encoded += encoded_dig
+        encoded += str((int(digit) + 3) % 10)
     return encoded
 
 
