@@ -5,10 +5,6 @@ def encode(password):
     encoded = ''
     for digit in password:
         encoded += str((int(digit) + 3) % 10)
-        '''
-        adds 3 to each digit, while taking modulo 10 to keep
-        within single digits
-        '''
     return encoded
 
 
